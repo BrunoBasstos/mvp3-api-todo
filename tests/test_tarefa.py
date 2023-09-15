@@ -13,9 +13,9 @@ class TestTarefa(BaseTestCase):
         self.auth_token = self.create_auth_token(usuario.id)
 
         tarefa1 = Tarefa(titulo="Tarefa 1", descricao="Descrição da tarefa 1", status=Status.PENDENTE,
-                         usuario_id=usuario.id, prioridade=Prioridade.ALTA)
+                         usuario_id=usuario.id, prioridade=Prioridade.ALTA, data_tarefa=datetime.now(), cidade="Rio de Janeiro")
         tarefa2 = Tarefa(titulo="Tarefa 2", descricao="Descrição da tarefa 2", status=Status.PENDENTE,
-                         usuario_id=usuario.id, prioridade=Prioridade.BAIXA)
+                         usuario_id=usuario.id, prioridade=Prioridade.BAIXA, data_tarefa=datetime.now(), cidade="Rio de Janeiro")
         self.session.add_all([tarefa1, tarefa2])
         self.session.commit()
 
@@ -35,9 +35,9 @@ class TestTarefa(BaseTestCase):
         self.auth_token = self.create_auth_token(usuario1.id)
 
         tarefa1 = Tarefa(titulo="Tarefa 1", descricao="Descrição da tarefa 1", status=Status.PENDENTE,
-                         usuario_id=usuario1.id, prioridade=Prioridade.ALTA)
+                         usuario_id=usuario1.id, prioridade=Prioridade.ALTA, data_tarefa=datetime.now(), cidade="Rio de Janeiro")
         tarefa2 = Tarefa(titulo="Tarefa 2", descricao="Descrição da tarefa 2", status=Status.PENDENTE,
-                         usuario_id=usuario2.id, prioridade=Prioridade.BAIXA)
+                         usuario_id=usuario2.id, prioridade=Prioridade.BAIXA, data_tarefa=datetime.now(), cidade="Rio de Janeiro")
         self.session.add_all([tarefa1, tarefa2])
         self.session.commit()
 
