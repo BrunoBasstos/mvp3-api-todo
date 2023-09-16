@@ -11,7 +11,7 @@ class TarefaSchema(BaseModel):
     """
     titulo: str = Field(example="Comprar pão", description="O título da tarefa")
     descricao: str = Field(example="Ir na padaria da esquina", description="A descrição da tarefa")
-    data_tarefa: datetime = Field(default=datetime.now(), description="A data da tarefa", nullable=True)
+    data_tarefa: Optional[datetime] = Field(example=datetime.now(), default=datetime.now(), description="A data da tarefa", nullable=True)
     cidade: Optional[str] = Field(example="Rio de Janeiro", description="A cidade da tarefa")
     status: Status = Field(example=Status.PENDENTE, description="O status da tarefa")
     prioridade: Prioridade = Field(example=Prioridade.ALTA, description="A prioridade da tarefa")
