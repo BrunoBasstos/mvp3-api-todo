@@ -3,7 +3,6 @@ from pydantic import BaseModel, Field, validator, EmailStr
 from typing import Optional, List
 
 from enums import Perfil
-from schemas import TarefaSchema
 
 class UsuarioSchema(BaseModel):
     """
