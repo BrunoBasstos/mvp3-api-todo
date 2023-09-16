@@ -1,5 +1,5 @@
 # ToDo API
-![todo-app-diagrama](https://github.com/BrunoBasstos/mvp3-api-todo/assets/5402439/16faecac-3863-4086-a6e2-f407ece09965)
+![todo-app-diagrama](https://github.com/BrunoBasstos/mvp3-api-todo/assets/5402439/edf36b54-73c5-4994-a866-db021a6ac3b5)
 
 Este é um MVP para conclusão da terceira sprint do curso de pós graduação em engenharia de software pela PUC-Rio.
 
