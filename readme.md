@@ -58,15 +58,15 @@ Antes de executar o projeto, certifique-se de ter instalado:
 ## Como executar
 
 1. Clone o repositório.
-2. Crie o arquivo .env usando o arquivo .env.example como base e configure seu ambiente. Recomendamos manter a aplicação rodando na porta 5000.    
-3. Crie e ative um ambiente virtual Python 3.
+2. Crie o arquivo .env usando o arquivo .env.example como base e configure seu ambiente. Recomendamos manter a aplicação rodando na porta 5000.
+4. Crie e ative um ambiente virtual Python 3.
     1. No Windows, utilize o comando `python -m venv venv` para criar o ambiente virtual e `venv\Scripts\activate` para
        ativá-lo.
     2. No Linux, utilize o comando `python3 -m venv venv` para criar o ambiente virtual e `source venv/bin/activate`
        para ativá-lo.
-4. Instale as dependências do projeto com o comando `pip install -r requirements.txt`.
-5. Inicie a aplicação com o comando `python app.py`.
-6. Acesse a documentação da API em `http://localhost:5000/openapi/swagger`.
+5. Instale as dependências do projeto com o comando `pip install -r requirements.txt`.
+6. Inicie a aplicação com o comando `python app.py`.
+7. Acesse a documentação da API em `http://localhost:5000/openapi/swagger`.
 
 ## Como executar com Docker
 
@@ -78,6 +78,8 @@ Antes de executar o projeto, certifique-se de ter instalado:
     1. Note que isto criará um container com o nome todo-api. Para reiniciar a aplicação nas próximas vezes, basta
        executar o comando `docker start todo-api`. Caso você queira remover o container,
        execute `docker rm -f todo-api`.
+
+> **IMPORTANTE** Não esqueça criar o arquivo .env da aplicação para que ela possa inicializar e se comunicar com as demais aplicações do projeto corretamente corretamente.
 
 ## Testes
 
